@@ -13,7 +13,7 @@ dt <- 0.25
 m <- 4000
 a <- 0.05
 b <- 0.06
-c <- 0.02
+c <- 0.07
 d_0 <- 0.05
 e <- 0.1
 theta_P_0 <- 0.04
@@ -84,13 +84,13 @@ for (j in 0:transition_steps) {
   print(paste("R1 is", R1, "R2 is", R2))
 
   # plot the computed data
-  plot(r$t,r$R1,col="green", main=paste0("Model 1(1+) to 1(1-) step ",j," (",eta,")"), xlab="time", ylab="population size", pch=".", ylim=c(0,5), xlim=c(0,1300))
+  plot(r$t,r$R1,col="green", main=paste0("Model 1(1+) to 1(1-) step ",j," (",eta,")"), xlab="time", ylab="population size", pch=".", ylim=c(0,10), xlim=c(0,1300))
   points(r$t,r$R2,col="cyan", pch=".")
   points(r$t,r$P,col="blue", pch=".")
-  points(r$t,r$F1,col="pink", pch=".")
-  points(r$t,r$F2,col="red", pch=".")
-  lines(x=c(0,1000), y=rep(4.44,2), col="grey", lty=2, lwd=1)
-  legend("topright", c("R1 host ribozyme", "R2 host replicase", "P parasite", "F1 prototemplate", "F2 protoreplicase/antibody", "population size = 4.44"),
+  points(r$t,r$F1,col="red", pch=".")
+  points(r$t,r$F2,col="pink", pch=".")
+  lines(x=c(0,1000), y=rep(4.26,2), col="grey", lty=2, lwd=1)
+  legend("topright", c("R1 host ribozyme", "R2 host replicase", "P parasite", "F1 prototemplate", "F2 protoreplicase/antibody", "population size = 4.26"),
          lty = c(1,1,1,1,1,2), col = c("green","cyan","blue","red","pink","grey"), box.lwd = 0)
 }
 

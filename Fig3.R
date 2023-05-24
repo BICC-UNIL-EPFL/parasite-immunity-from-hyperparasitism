@@ -76,8 +76,8 @@ for (k in 1:m) {
 plot(r$t,r$R1,col="green", main="Model 1(1+)                              Model 1(2)", xlab="time", ylab="population size", pch=".", ylim=c(0,11))
 points(r$t,r$R2,col="cyan", pch=".")
 points(r$t,r$P,col="blue", pch=".")
-points(r$t,r$F1,col="pink", pch=".")
-points(r$t,r$F2,col="red", pch=".")
+points(r$t,r$F1,col="red", pch=".")
+points(r$t,r$F2,col="pink", pch=".")
 abline(v=5001*dt, col="grey", lty=2, lwd=2)
 legend("topright",
        c("R1 host ribozyme", "R2 host replicase", "P parasite (integrated after 2500)", "F1 prototemplate (integrated after 2500)", "F2 protoreplicase (integrated after 2500)", "integrated"),

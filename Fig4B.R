@@ -77,8 +77,8 @@ for (k in 1:m) {
 plot(r$t,r$R1,col="green", main="Model 1(1-)", xlab="time", ylab="population size", pch=".", ylim=c(0,6))
 points(r$t,r$R2,col="cyan", pch=".")
 points(r$t,r$P,col="blue", pch=".")
-points(r$t,r$F1,col="pink", pch=".")
-points(r$t,r$F2,col="red", pch=".")
+points(r$t,r$F1,col="red", pch=".")
+points(r$t,r$F2,col="pink", pch=".")
 legend("topright", c("R1 host ribozyme", "R2 host replicase", "P parasite", "F1 prototemplate", "F2 antibody"), lty = 1, col = c("green","cyan","blue","red","pink"), box.lwd = 0)
 
 dev.off()
