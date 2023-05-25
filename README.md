@@ -7,4 +7,4 @@ _Birth of immunity in early life: stepwise emergence of resistance and immunity 
 
 Here is the DOI for the released code:
 
-[![DOI](https://zenodo.org/badge/645228514.svg)](https://zenodo.org/badge/latestdoi/645228514)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7970788.svg)](https://doi.org/10.5281/zenodo.7970788)
